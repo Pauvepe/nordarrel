@@ -1,12 +1,3 @@
-// =====================================================================
-// MIDDLEWARE: EL GUARDIA DE LA PUERTA DEL ADMIN
-// ---------------------------------------------------------------------
-// Se ejecuta ANTES de cada pagina del admin. Si no has hecho login, te
-// echa a /login. Pasos: 1) deja pasar las rutas publicas (login, assets).
-// 2) busca la cookie de sesion (sb-access-token). 3) pregunta a Supabase
-// Auth quien eres. 4) comprueba en la tabla nordarrel_admin_users que
-// tengas un rol permitido y estes activo. Si algo falla, fuera.
-// =====================================================================
 import { createClient } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -31,7 +22,7 @@ export async function middleware(request: NextRequest) {
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!,
-    { db: { schema: process.env.NEXT_PUBLIC_SUPABASE_SCHEMA || "public" } }
+    { db: { schema: process.env.NEXT_PUBLIC_SUPABASE_SCHEMA || "plantilla_limpia" } }
   );
 
   const {

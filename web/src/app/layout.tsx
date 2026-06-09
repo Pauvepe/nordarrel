@@ -1,11 +1,3 @@
-// =====================================================================
-// LAYOUT GENERAL (el marco que envuelve TODAS las paginas)
-// ---------------------------------------------------------------------
-// Aqui se monta lo que sale en toda la web: el Navbar arriba, el contenido
-// de cada pagina en medio ({children}), y abajo el Footer, el boton de
-// WhatsApp y el aviso de cookies. Tambien carga las dos tipografias
-// (Inter para texto, Playfair para titulos) y el CSS global.
-// =====================================================================
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";

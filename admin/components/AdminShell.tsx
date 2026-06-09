@@ -1,11 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: AdminShell (esqueleto del panel)
-// ---------------------------------------------------------------------
-// Envuelve cada pantalla. Si estas en /login, muestra solo el login. En
-// el resto, pone la cabecera (AdminHeader) y el contenido centrado.
-// =====================================================================
 import { usePathname } from "next/navigation";
 import { AdminHeader } from "./AdminHeader";
 

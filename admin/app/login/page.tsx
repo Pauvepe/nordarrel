@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// PAGINA: LOGIN DEL ADMIN  (URL "/login")
-// ---------------------------------------------------------------------
-// Email + contrasena. Al enviar, comprueba las credenciales contra
-// Supabase Auth (signInWithPassword) y, si son correctas, guarda la
-// cookie de sesion. A partir de ahi el middleware deja entrar al panel.
-// =====================================================================
 import { useState } from "react";
 import { createBrowserClient } from "@/lib/supabase/client";
 

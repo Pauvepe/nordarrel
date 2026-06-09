@@ -1,13 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: NAVBAR (el menu de arriba)
-// ---------------------------------------------------------------------
-// DONDE SE USA: en layout.tsx, asi que sale en TODAS las paginas.
-// QUE HACE: logo + enlaces (Servicios, Sobre nosotros, Contacto, Cita) +
-// boton naranja "Diagnostico sin compromiso" + menu hamburguesa para movil.
-// "open" controla si el menu movil esta abierto o cerrado.
-// =====================================================================
 import { useState } from "react";
 import Link from "next/link";
 

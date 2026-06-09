@@ -1,37 +1,3 @@
-/* =====================================================================
-   NORDARREL - SISTEMA DE DISENO  (LEER ESTO ANTES DE TOCAR ESTILOS)
-   ---------------------------------------------------------------------
-   Todo el diseno de la web sale de los "tokens" que hay aqui abajo, en
-   :root. Un token es una variable de color/medida que se usa en toda la
-   web. Si cambias un token aqui, cambia en TODAS las paginas a la vez.
-
-   REGLAS (para no inventar estilos sueltos):
-   - FONDO de pagina y de seccion  -> var(--bg)  (es blanco). Las secciones
-     NO llevan colores de fondo raros; el color lo ponen los detalles.
-   - FONDO de una tarjeta          -> blanco (#fff). NUNCA rojo/azul/etc.
-     Una tarjeta nueva debe parecerse a las que ya existen (.snake-card,
-     .before-card, .service-mini-card): fondo blanco + borde fino + sombra.
-   - Forma de tarjeta -> radio var(--home-card-radius), borde
-     var(--home-card-border), sombra var(--home-card-shadow) y al pasar el
-     raton var(--home-card-shadow-hover).
-   - BOTONES -> usar las clases ya hechas, no inventar:
-       .btn            base (pildora)
-       .btn-secondary  boton claro con borde
-       .btn-on-orange  boton naranja (CTA principal)
-       .btn-on-black   boton oscuro
-       .btn-large      version mas grande
-   - ICONOS -> caja cuadrada con los tokens --default-icon-* (fondo blanco,
-     icono color terracota). Ver .snake-card-icon o .service-icon.
-   - TEXTOS -> titulos con --content-title-* y parrafos con --content-body-*.
-     Tipografias: --font (texto) y --serif (titulos).
-   - COLOR DE MARCA -> terracota: var(--orange) y var(--rust). El verde
-     var(--moss) es acento. No meter colores nuevos a mano.
-
-   En cristiano: si vas a crear algo nuevo, COPIA un bloque que ya exista y
-   cambia solo el texto. Asi todo se ve igual en toda la web.
-   Explicacion en lenguaje plano: docs/DISENO.md
-   ===================================================================== */
-
 @import "tailwindcss" source("../");
 
 :root {
@@ -113,7 +79,6 @@ section { padding: 50px 0; }
 .container, .na-wrap { max-width: var(--max-w); margin: 0 auto; width: min(var(--max-w), calc(100% - (var(--page-gutter) * 2))); }
 .bg-alt { background: var(--bg); }
 
-/* ===== BOTONES (las pildoras .btn y sus variantes) ===== */
 .btn {
   font-family: var(--serif);
   display: inline-flex;
@@ -142,7 +107,6 @@ section { padding: 50px 0; }
 }
 .btn-secondary:hover { background: #fff; border-color: var(--orange); color: var(--orange-d); transform: translateY(-1px); }
 
-/* ===== HEADER / NAVBAR (la barra de arriba, fija y con efecto cristal) ===== */
 .site-header {
   position: fixed;
   top: 16px;
@@ -314,7 +278,6 @@ section { padding: 50px 0; }
   box-shadow: inset 0 1.5px 0 rgba(255,255,255,.22), 0 3px 14px rgba(169,86,59,.32);
 }
 
-/* ===== HERO (la cabecera grande de la home con titulo animado) ===== */
 .hero {
   background:
     radial-gradient(circle at 14% 28%, rgba(216,154,120,.34) 0%, rgba(216,154,120,.16) 14%, transparent 34%),
@@ -461,7 +424,6 @@ section { padding: 50px 0; }
 .galeria-section .container { padding: 0; }
 .galeria-intro { margin-bottom: 42px; }
 
-/* ===== CARRUSEL (estilos del componente Carousel: tarjetas, flechas, degradados) ===== */
 .gc-carousel { position: relative; padding: 0 var(--page-gutter); --home-card-width: clamp(260px, calc((min(var(--max-w), 100vw - var(--page-gutter) * 2) - 54px) / 4), 290px); }
 .gc-carousel--team { --home-card-width: clamp(300px, calc((min(var(--max-w), 100vw - var(--page-gutter) * 2) - 36px) / 3), 400px); }
 .gc-carousel__viewport { position: relative; width: min(100%, var(--home-carousel-max)); margin: 0 auto; overflow: hidden; }
@@ -629,7 +591,6 @@ section { padding: 50px 0; }
   .gc-carousel__arrow svg { width: 20px; height: 20px; }
 }
 
-/* ===== AVISO DE COOKIES (la barra de abajo) ===== */
 .cookie-banner {
   position: fixed;
   left: 50%;
@@ -674,7 +635,6 @@ section { padding: 50px 0; }
   .cookie-banner__actions .btn { flex: 1; }
 }
 
-/* ===== ANTES / DESPUES (las tarjetas con la barra que se arrastra) ===== */
 .before-section { padding: 88px 0 96px; background: #fff; }
 .before-head { max-width: 760px; margin: 0 auto 42px; text-align: center; }
 .before-head h2 { margin: 0 0 16px; font-size: clamp(2rem, 4.4vw, 3.2rem); line-height: 1.08; font-weight: 900; color: var(--text); }
@@ -836,7 +796,6 @@ section { padding: 50px 0; }
 .cb-rot-list li:nth-child(3) { color: var(--copper-light); }
 @keyframes cb-rotate { 0%,14%{transform:translateY(0)} 20%,34%{transform:translateY(-1.1em)} 40%,54%{transform:translateY(-2.2em)} 60%,74%{transform:translateY(-3.3em)} 80%,100%{transform:translateY(-4.4em)} }
 
-/* ===== METODO (la "serpiente" de pasos numerados de la home) ===== */
 .snake-container { position: relative; max-width: 1000px; margin: 60px auto; padding: 40px 0; isolation: isolate; }
 .snake-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 80px 40px; position: relative; z-index: 2; align-items: stretch; }
 .snake-item:nth-child(1) { grid-area: 1 / 1; }
@@ -957,7 +916,6 @@ section { padding: 50px 0; }
 .btn-on-black:hover { background: #000; box-shadow: inset 0 1.5px 0 rgba(255,255,255,.20), 0 8px 24px rgba(0,0,0,.25); transform: translateY(-2px); }
 
 
-/* ===== COMPARATIVA (tabla "ir a ciegas" vs "con NordArrel") ===== */
 .comp-table {
   border-radius: 0;
   overflow: visible;

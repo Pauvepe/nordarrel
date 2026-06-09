@@ -1,13 +1,3 @@
-// =====================================================================
-// EMAILS AUTOMATICOS (Resend)
-// ---------------------------------------------------------------------
-// QUE ES: aqui se definen los 3 correos que manda la web sola:
-//   1) sendAppointmentConfirmation -> confirmacion al cliente que reserva.
-//   2) sendAdminNewAppointment     -> aviso a la clinica de nueva reserva.
-//   3) sendNewsletterWelcome       -> bienvenida al apuntarse a la newsletter.
-// QUIEN LO LLAMA: las APIs /api/appointments y /api/newsletter.
-// LA CLAVE: RESEND_API_KEY se lee de .env.local.
-// =====================================================================
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);

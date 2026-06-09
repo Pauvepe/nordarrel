@@ -1,11 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: AntesDespues (comparador de fotos antes/despues)
-// ---------------------------------------------------------------------
-// Las tarjetas con la barra que arrastras para ver el "antes" y el
-// "despues". Se usa en la home. El array "cases" son los casos mostrados.
-// =====================================================================
 import type { CSSProperties } from "react";
 import { useState } from "react";
 

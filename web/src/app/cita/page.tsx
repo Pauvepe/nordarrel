@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// PAGINA: AGENDAR CITA  (URL "/cita") - CTA secundario
-// ---------------------------------------------------------------------
-// Como la de diagnostico, pero para pacientes ya valorados o seguimiento.
-// Formulario + calendario. Al confirmar envia a la API POST /api/appointments
-// con tipo "cita". Funciona igual que diagnostico/page.tsx.
-// =====================================================================
 import { CalendarCheck, ClipboardList, MessageCircleMore } from "lucide-react";
 import Link from "next/link";
 import BookingCalendar from "@/components/booking/BookingCalendar";

@@ -1,9 +1,3 @@
-// =====================================================================
-// COMPONENTE: WhatsAppButton (boton flotante de WhatsApp)
-// ---------------------------------------------------------------------
-// El circulo verde fijo abajo a la derecha. Al pulsarlo abre WhatsApp con
-// un mensaje preescrito. QUE RECIBE: numero y mensaje. Se coloca en layout.tsx.
-// =====================================================================
 interface Props {
   numero?: string;
   mensaje?: string;

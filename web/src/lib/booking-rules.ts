@@ -1,13 +1,3 @@
-// =====================================================================
-// REGLAS DE HORARIO DE RESERVA
-// ---------------------------------------------------------------------
-// Define que dias y horas se pueden reservar para cada tipo:
-//   - diagnostico: solo martes y jueves, en unas horas concretas.
-//   - cita: de lunes a viernes, con mas horas.
-// isValidSlot() comprueba que la fecha sea con 2 dias de margen, en un
-// dia valido y a una hora valida. Lo usa la API /api/appointments para
-// no fiarse solo del navegador (se valida tambien en el servidor).
-// =====================================================================
 export type BookingMode = "diagnostico" | "cita";
 
 export const bookingHours: Record<BookingMode, string[]> = {

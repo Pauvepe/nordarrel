@@ -1,11 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: AdminHeader (barra superior fija del panel)
-// ---------------------------------------------------------------------
-// La cabecera del admin. La usa AdminShell, que envuelve todas las
-// pantallas menos el login.
-// =====================================================================
 import { ExternalLink } from "lucide-react";
 
 export function AdminHeader() {

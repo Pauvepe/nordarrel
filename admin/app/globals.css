@@ -1,10 +1,3 @@
-/* =====================================================================
-   ADMIN - ESTILOS DEL PANEL
-   ---------------------------------------------------------------------
-   El admin tiene su propio estilo (mas sobrio, tipo herramienta), distinto
-   de la web publica. Sus colores/medidas son los tokens --admin-* de abajo.
-   Es utilitario a proposito: no es una landing, es el panel de gestion.
-   ===================================================================== */
 @import "tailwindcss";
 
 :root {

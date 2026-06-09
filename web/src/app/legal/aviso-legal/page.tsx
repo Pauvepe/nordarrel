@@ -1,4 +1,3 @@
-// PAGINA LEGAL: Aviso legal (URL "/legal/aviso-legal"). Solo texto legal.
 import Link from "next/link";
 
 export default function AvisoLegal() {

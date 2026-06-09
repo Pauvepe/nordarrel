@@ -1,4 +1,3 @@
-// PAGINA LEGAL: Politica de cookies (URL "/legal/politica-cookies"). Solo texto.
 import Link from "next/link";
 
 export default function PoliticaCookies() {

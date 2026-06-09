@@ -1,9 +1,3 @@
-// =====================================================================
-// API ADMIN: NUMEROS DEL DASHBOARD  (GET /api/dashboard)
-// ---------------------------------------------------------------------
-// Cuenta contactos, suscritos activos y citas pendientes, y trae las
-// proximas citas. Lo usa la pestana Dashboard.
-// =====================================================================
 import { createServerClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
 

@@ -1,12 +1,3 @@
-// =====================================================================
-// CONEXION PUBLICA CON LA BASE DE DATOS (llave normal "anon")
-// ---------------------------------------------------------------------
-// QUE ES: abre la conexion con Supabase con la llave normal, pensada
-//   para leer datos publicos desde el navegador.
-// DETALLE: si faltan las claves, devuelve un cliente "de mentira" que
-//   no rompe la web (responde listas vacias). Asi nunca peta por config.
-// LAS CLAVES: se leen de .env.local.
-// =====================================================================
 import { createClient } from "@supabase/supabase-js";
 
 export function createSupabaseClient() {

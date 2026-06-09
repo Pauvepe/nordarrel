@@ -1,9 +1,3 @@
-// =====================================================================
-// ADMIN - CONEXION DESDE EL NAVEGADOR (llave normal "anon")
-// ---------------------------------------------------------------------
-// La usa la pantalla de login para hacer el signInWithPassword contra
-// Supabase Auth. Claves desde .env.local.
-// =====================================================================
 import { createClient } from '@supabase/supabase-js';
 
 export function createBrowserClient() {

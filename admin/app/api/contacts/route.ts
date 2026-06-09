@@ -1,9 +1,3 @@
-// =====================================================================
-// API ADMIN: CONTACTOS  (GET busca / PATCH edita)  /api/contacts
-// ---------------------------------------------------------------------
-// GET lista o busca contactos (por nombre, email o telefono). PATCH
-// guarda cambios (p. ej. notas internas). Lo usa la pestana Contactos.
-// =====================================================================
 import { createServerClient } from "@/lib/supabase/server";
 import { NextRequest, NextResponse } from "next/server";
 

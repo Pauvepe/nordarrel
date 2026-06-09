@@ -1,4 +1,3 @@
-// PAGINA LEGAL: Politica de privacidad (URL "/legal/politica-privacidad"). Solo texto.
 import Link from "next/link";
 
 export default function PoliticaPrivacidad() {

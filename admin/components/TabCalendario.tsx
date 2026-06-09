@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// PESTANA: Calendario (gestion de citas)
-// ---------------------------------------------------------------------
-// Lista las reservas, deja filtrar y cambiar su estado (confirmar,
-// completar, cancelar). Lee con GET /api/appointments y actualiza el
-// estado con PATCH /api/appointments.
-// =====================================================================
 import { useEffect, useMemo, useState } from "react";
 
 type Appointment = {

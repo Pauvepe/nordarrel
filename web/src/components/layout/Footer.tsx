@@ -1,14 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: FOOTER (el pie de pagina)
-// ---------------------------------------------------------------------
-// DONDE SE USA: en layout.tsx, sale en TODAS las paginas.
-// QUE HACE: logo, redes, enlaces, legales, mapa y el FORMULARIO DE
-// NEWSLETTER. Al enviar la newsletter llama a la API POST /api/newsletter
-// (handleNewsletterSubmit), que guarda el email en Supabase y manda la
-// bienvenida con Resend.
-// =====================================================================
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, MapPin } from "lucide-react";
 import { useState, useCallback } from "react";

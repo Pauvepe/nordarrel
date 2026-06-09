@@ -1,11 +1,3 @@
-// =====================================================================
-// PAGINA: SERVICIOS  (URL "/servicios")
-// ---------------------------------------------------------------------
-// Explica los servicios de la clinica. Tiene: cabecera, un CARRUSEL de
-// servicios (usa el mismo componente Carousel que la home), una "ruta"
-// de como se decide y un banner final de CTA.
-// El array "services" de abajo son los textos del carrusel.
-// =====================================================================
 import {
   Check,
   ClipboardList,

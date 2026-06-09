@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// PANTALLA PRINCIPAL DEL ADMIN (el panel con pestanas)
-// ---------------------------------------------------------------------
-// Tiene 3 pestanas: Dashboard, Contactos y Calendario. "activeTab" guarda
-// cual esta abierta y abajo se muestra la que toca. Cada pestana es un
-// componente aparte que pide sus datos a su API.
-// =====================================================================
 import { useState } from "react";
 import TabDashboard from "@/components/TabDashboard";
 import TabContactos from "@/components/TabContactos";

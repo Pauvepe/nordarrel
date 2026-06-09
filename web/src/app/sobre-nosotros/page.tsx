@@ -1,10 +1,3 @@
-// =====================================================================
-// PAGINA: SOBRE NOSOTROS  (URL "/sobre-nosotros")
-// ---------------------------------------------------------------------
-// Pagina de confianza: la idea de la clinica, los valores y el equipo
-// (el equipo se muestra con el mismo Carousel que la home). Termina con
-// un banner de CTA. Los arrays "values" y "team" son los textos.
-// =====================================================================
 import Link from "next/link";
 import Carousel from "@/components/shared/Carousel";
 

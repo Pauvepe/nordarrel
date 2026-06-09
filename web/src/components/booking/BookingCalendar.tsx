@@ -1,15 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: BookingCalendar (el calendario visual de reservas)
-// ---------------------------------------------------------------------
-// DONDE SE USA: en las paginas /diagnostico y /cita.
-// QUE RECIBE (props): mode = "diagnostico" o "cita" (cada uno tiene sus
-// dias/horas, ver booking-rules.ts); onChange = avisa a la pagina del
-// hueco elegido { fecha, hora }.
-// QUE HACE: pinta el mes, llama a la API /api/availability para saber que
-// horas estan ocupadas y dejar elegir solo huecos libres.
-// =====================================================================
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useMemo, useState, useEffect } from "react";
 import { bookingHours } from "@/lib/booking-rules";

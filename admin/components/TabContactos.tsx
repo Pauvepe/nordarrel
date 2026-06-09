@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// PESTANA: Contactos (mini CRM)
-// ---------------------------------------------------------------------
-// Lista y busca contactos, muestra sus datos y si estan en la newsletter,
-// y deja guardar notas internas. Pide datos a /api/contacts (y a
-// /api/newsletter para el estado de suscripcion) y guarda con /api/contacts.
-// =====================================================================
 import { Cake, Mail, Search, StickyNote } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 

@@ -1,9 +1,3 @@
-// =====================================================================
-// COMPONENTE: GaleriaCarousel (galeria del espacio en la home)
-// ---------------------------------------------------------------------
-// Muestra las fotos de la clinica usando el Carousel comun. El array
-// "slides" de abajo son las fotos y sus textos. Se usa en la home.
-// =====================================================================
 import Carousel from "@/components/shared/Carousel";
 
 const slides = [

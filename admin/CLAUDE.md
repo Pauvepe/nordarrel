@@ -1,29 +1,21 @@
-﻿> DEFINICION CANONICA NORDARREL 2026: clinica capilar masculina premium en Barcelona. No ecommerce, no WordPress, no tienda, no pelucas/protesis. Servicios: diagnostico capilar gratis, tratamiento regenerativo si encaja, salud del cuero cabelludo y seguimiento presencial. Injerto/trasplante solo como opcion avanzada si el diagnostico lo justifica. CTA principal: Diagnostico gratis.
-# NordArrel â€” Admin privado
+@../../ecommerce/codigo/admin/AGENTS.md
 
-Esto es el PANEL privado de NordArrel (Next.js). Se entra con login (Supabase Auth).
-No es ecommerce.
+# ⚠️ PUERTOS LOCALES — NO MEZCLAR CON ECOMMERCE ⚠️
 
-## Local
+Esto es el ADMIN de SERVICIOS. En desarrollo local convive con otros proyectos:
 
-- Admin (este proyecto): `http://localhost:6002` (login en `/login`)
-- Web: `http://localhost:6001`
+| Proyecto | Puerto | Directorio |
+|----------|--------|------------|
+| **ECOMMERCE admin** | **5000** | `ecommerce/codigo/admin/` |
+| **ECOMMERCE web** | **5001** | `ecommerce/codigo/web/` |
+| **SERVICIOS admin** (ESTE) | **6000** | `servicios/codigo/admin/` |
+| **SERVICIOS web** | **6001** | `servicios/codigo/web/` |
 
-## Pestanas vivas
+Ver `LOCAL.md` seccion 2 para instrucciones completas de arranque.
 
-Solo 3: Dashboard, Contactos, Calendario (ver `app/page.tsx`).
+**PROHIBIDO**: Cualquier link o referencia a `localhost:5000` o `localhost:5001` desde servicios.
+Ecommerce y servicios son proyectos 100% independientes. Comparten Supabase (schema `plantilla_limpia`) pero usan tablas distintas (`servicios_*` vs `ecommerce_*`). En produccion van a clientes diferentes.
 
-## Supabase
-
-- Proyecto: `NordArrel` (ref `cidlxminqqtptooovgbk`)
-- Tablas: prefijo `nordarrel_*`.
-- Claves reales en `.env.local`, nunca en el codigo.
-
-## Conexiones
-
-- Conexion a la base de datos: `lib/supabase/server.ts` y `lib/supabase/client.ts`.
-- Guardia de acceso (login obligatorio): `middleware.ts`.
-- Puertas (APIs) vivas: `app/api/` -> `dashboard`, `appointments`, `contacts`, `newsletter`.
-
-Detalle completo en `../../docs/CONEXIONES-VPS-SUPABASE.md` y mapa en `../../docs/GUIA-DEL-CODIGO.md`.
-
+# Tablas Supabase
+Prefijo: `servicios_*` (ajustes, imagenes, testimonios, servicios)
+NUNCA tocar tablas `ecommerce_*`.

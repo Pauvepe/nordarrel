@@ -1,10 +1,3 @@
-// =====================================================================
-// API ADMIN: CITAS  (GET lista / PATCH cambia estado)  /api/appointments
-// ---------------------------------------------------------------------
-// GET devuelve todas las reservas ordenadas por fecha. PATCH cambia el
-// estado de una cita (confirmar/completar/cancelar). Lo usa la pestana
-// Calendario. Protegido por el middleware (login obligatorio).
-// =====================================================================
 import { createServerClient } from "@/lib/supabase/server";
 import { NextRequest, NextResponse } from "next/server";
 

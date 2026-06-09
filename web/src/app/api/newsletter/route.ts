@@ -1,12 +1,3 @@
-// =====================================================================
-// API: ALTA EN LA NEWSLETTER  (POST /api/newsletter)
-// ---------------------------------------------------------------------
-// Se llama desde el formulario del footer. Pasos:
-//   1) limpia el email y comprueba que sea valido.
-//   2) mira si ya estaba suscrito (para no duplicar).
-//   3) guarda el contacto y el suscriptor en Supabase.
-//   4) manda el email de bienvenida con Resend.
-// =====================================================================
 import { NextRequest, NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/supabase-server";
 import { sendNewsletterWelcome } from "@/lib/email";

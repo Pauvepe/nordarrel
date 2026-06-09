@@ -1,11 +1,3 @@
-// =====================================================================
-// API: HORAS OCUPADAS  (GET /api/availability?from=...&to=...)
-// ---------------------------------------------------------------------
-// El calendario llama aqui para saber que dias/horas ya estan pillados.
-// Pregunta a Supabase por las reservas (que no esten canceladas) y por
-// los bloqueos manuales del calendario, y devuelve la lista "ocupado".
-// Con eso el calendario pinta esas horas como no disponibles.
-// =====================================================================
 import { NextRequest, NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/supabase-server";
 

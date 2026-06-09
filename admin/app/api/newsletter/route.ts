@@ -1,9 +1,3 @@
-// =====================================================================
-// API ADMIN: SUSCRITOS A NEWSLETTER  (GET /api/newsletter)
-// ---------------------------------------------------------------------
-// Devuelve la lista de suscritos. La usa la pestana Contactos para marcar
-// quien esta en la newsletter.
-// =====================================================================
 import { createServerClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
 

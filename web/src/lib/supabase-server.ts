@@ -1,12 +1,3 @@
-// =====================================================================
-// CONEXION SEGURA CON LA BASE DE DATOS (solo servidor)
-// ---------------------------------------------------------------------
-// QUE ES: abre la conexion con Supabase usando la LLAVE MAESTRA
-//   (service_role). Esta llave puede escribir cualquier cosa, por eso
-//   SOLO se usa aqui, en el servidor, nunca en el navegador del usuario.
-// QUIEN LO USA: las APIs de /api (appointments, availability, newsletter).
-// LAS CLAVES: se leen de .env.local, no estan escritas en el codigo.
-// =====================================================================
 import { createClient } from "@supabase/supabase-js";
 
 export function createSupabaseServerClient() {

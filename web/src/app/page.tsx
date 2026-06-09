@@ -1,13 +1,3 @@
-// =====================================================================
-// PAGINA: HOME  (la portada, URL "/")
-// ---------------------------------------------------------------------
-// Es la pantalla principal. De arriba a abajo tiene: hero (cabecera con
-// titulo animado), galeria del espacio, antes/despues, servicios (carrusel),
-// metodo paso a paso, banner de diagnostico, comparativa, resenas, equipo y FAQ.
-// Casi todo son textos (los arrays de arriba: steps, faqs, reviews, team,
-// services) que luego se pintan abajo dentro de cada <section>.
-// El diseno (colores, tarjetas, botones) sale de globals.css.
-// =====================================================================
 import {
   CalendarCheck,
   Check,

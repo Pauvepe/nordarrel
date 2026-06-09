@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: HomeEffects (efectos de scroll de la home)
-// ---------------------------------------------------------------------
-// No pinta nada (devuelve null). Solo escucha el scroll para ir
-// "encendiendo" las tarjetas del metodo (la serpiente) y las filas de la
-// comparativa segun bajas por la pagina. Es decoracion/animacion.
-// =====================================================================
 import { useEffect } from "react";
 
 export default function HomeEffects() {

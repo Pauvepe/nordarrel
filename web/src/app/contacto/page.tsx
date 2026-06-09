@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// PAGINA: CONTACTO  (URL "/contacto")
-// ---------------------------------------------------------------------
-// Pagina para dudas (no es el canal de reservas). Tiene un formulario de
-// consulta general, tarjetas con telefono/email/horario, un boton de
-// WhatsApp y un mapa. El formulario de aqui es solo visual de momento.
-// =====================================================================
 import { Clock, Mail, MapPin, MessageCircleMore, Phone } from "lucide-react";
 import Link from "next/link";
 import { useState, useCallback } from "react";

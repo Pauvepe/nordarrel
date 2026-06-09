@@ -1,12 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: CookieBanner (aviso de cookies de abajo)
-// ---------------------------------------------------------------------
-// Aparece la primera vez que entras. Al aceptar o rechazar, guarda la
-// eleccion en el navegador (localStorage) para no volver a mostrarlo.
-// Se coloca en layout.tsx.
-// =====================================================================
 import Link from "next/link";
 import { Cookie } from "lucide-react";
 import { useEffect, useState } from "react";

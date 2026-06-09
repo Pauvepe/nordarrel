@@ -1,15 +1,5 @@
 "use client";
 
-// =====================================================================
-// PAGINA: DIAGNOSTICO SIN COMPROMISO  (URL "/diagnostico") - CTA principal
-// ---------------------------------------------------------------------
-// Formulario para pedir el diagnostico sin compromiso + calendario para elegir hora.
-// "use client" significa que esta pagina corre en el navegador (guarda lo
-// que escribe el usuario en variables de estado: name, email, slot...).
-// Al darle a Confirmar, envia todo a la API POST /api/appointments, que
-// guarda la reserva en Supabase y manda los emails. Aqui solo se recoge
-// y valida lo que el usuario escribe.
-// =====================================================================
 import { ClipboardList, Eye, MessageCircleMore, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import BookingCalendar from "@/components/booking/BookingCalendar";

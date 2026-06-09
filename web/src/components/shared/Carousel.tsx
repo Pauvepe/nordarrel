@@ -1,15 +1,5 @@
 "use client";
 
-// =====================================================================
-// COMPONENTE: CAROUSEL (el carrusel, UNO SOLO para toda la web)
-// ---------------------------------------------------------------------
-// DONDE SE USA: home (servicios y equipo), pagina de servicios y sobre-nosotros.
-// Es UN unico componente: si se cambia aqui, cambia en todos esos sitios.
-// QUE RECIBE (props): children = las tarjetas que van dentro; className =
-// estilos extra (ej. "gc-carousel--team"); ariaLabel = nombre accesible.
-// QUE HACE: deja arrastrar las tarjetas, las flechas mueven de una en una,
-// y los degradados de los lados se ocultan al llegar al principio/final.
-// =====================================================================
 import { useEffect, useRef, type ReactNode } from "react";
 
 export default function Carousel({

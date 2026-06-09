@@ -1,11 +1,5 @@
 "use client";
 
-// =====================================================================
-// PESTANA: Dashboard (resumen)
-// ---------------------------------------------------------------------
-// Muestra numeros: total de contactos, suscritos a newsletter, citas
-// pendientes y las proximas citas. Pide los datos a la API /api/dashboard.
-// =====================================================================
 import { CalendarCheck, Mail, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
