@@ -1,0 +1,248 @@
+/* =====================================================================
+   ADMIN - ESTILOS DEL PANEL
+   ---------------------------------------------------------------------
+   El admin tiene su propio estilo (mas sobrio, tipo herramienta), distinto
+   de la web publica. Sus colores/medidas son los tokens --admin-* de abajo.
+   Es utilitario a proposito: no es una landing, es el panel de gestion.
+   ===================================================================== */
+@import "tailwindcss";
+
+:root {
+  --admin-primary: #2271b1;
+  --admin-primary-hover: #135e96;
+  --admin-bg: #f0f0f1;
+  --admin-text: #1e1e1e;
+  --admin-text-secondary: #50575e;
+  --admin-card-bg: #ffffff;
+  --admin-card-border: #c3c4c7;
+  --admin-destructive: #b32d2e;
+  --admin-success: #00a32a;
+  --admin-header-bg: #1d2327;
+  --admin-header-height: 48px;
+}
+
+@theme inline {
+  --color-admin-primary: var(--admin-primary);
+  --color-admin-primary-hover: var(--admin-primary-hover);
+  --color-admin-bg: var(--admin-bg);
+  --color-admin-text: var(--admin-text);
+  --color-admin-text-secondary: var(--admin-text-secondary);
+  --color-admin-card-bg: var(--admin-card-bg);
+  --color-admin-card-border: var(--admin-card-border);
+  --color-admin-destructive: var(--admin-destructive);
+  --color-admin-success: var(--admin-success);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+  padding: 9px 0 4px;
+  color: var(--admin-text);
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.skeleton {
+  background: #e0e0e0;
+  border-radius: 3px;
+  animation: skeleton-pulse 1.2s ease-in-out infinite;
+}
+
+.admin-card {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-card-border);
+  border-radius: 6px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+}
+
+.admin-card h2 {
+  margin: 0 0 14px;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.admin-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.admin-metric-card {
+  background: #fff;
+  border: 1px solid var(--admin-card-border);
+  border-radius: 6px;
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.admin-metric-card strong {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.admin-toolbar,
+.admin-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.admin-search {
+  justify-content: flex-start;
+  border: 1px solid var(--admin-card-border);
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.admin-search input,
+.admin-toolbar select,
+.admin-detail textarea {
+  width: 100%;
+  border: 1px solid var(--admin-card-border);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.admin-table {
+  display: grid;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.admin-table-head,
+.admin-table-row,
+.admin-row,
+.contact-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-table-head {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--admin-text-secondary);
+}
+
+.admin-table-row,
+.admin-table-head {
+  display: grid;
+  gap: 12px;
+  padding: 12px 8px;
+  align-items: start;
+}
+
+.admin-appointment-grid { grid-template-columns: 120px minmax(220px, 1.4fr) 160px 120px 230px; }
+.admin-newsletter-grid { grid-template-columns: minmax(240px, 1fr) 100px 110px 110px; }
+
+.admin-row,
+.contact-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  background: none;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  text-align: left;
+  color: var(--admin-text);
+}
+
+.admin-row span,
+.contact-row span,
+.admin-row-right {
+  color: var(--admin-text-secondary);
+  font-size: 12px;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.admin-actions button,
+.admin-search button,
+.admin-primary {
+  border: 1px solid var(--admin-primary);
+  background: var(--admin-primary);
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.admin-actions button:last-child {
+  border-color: var(--admin-destructive);
+  background: var(--admin-destructive);
+}
+
+.admin-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, .8fr);
+  gap: 18px;
+}
+
+.admin-detail {
+  position: sticky;
+  top: 68px;
+  align-self: start;
+}
+
+.admin-detail p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--admin-text-secondary);
+}
+
+.status {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 11px;
+}
+
+.status-confirmada,
+.status-activo { background: #dcfce7; color: #166534; }
+.status-cancelada,
+.status-baja { background: #fee2e2; color: #991b1b; }
+.status-completada { background: #e0f2fe; color: #075985; }
+
+.admin-empty {
+  margin: 0;
+  color: var(--admin-text-secondary);
+}
+
+@media (max-width: 760px) {
+  .admin-metric-grid,
+  .admin-split {
+    grid-template-columns: 1fr;
+  }
+}

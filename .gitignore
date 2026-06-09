@@ -1,0 +1,30 @@
+# dependencias
+node_modules/
+**/node_modules/
+
+# builds Next.js
+.next/
+**/.next/
+out/
+**/out/
+dist/
+build/
+
+# entorno / claves (NUNCA subir)
+.env
+.env.local
+.env*.local
+**/.env
+**/.env.local
+**/.env*.local
+
+# typescript / cache
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# logs y temporales
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vercel
