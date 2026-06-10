@@ -2,7 +2,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const FROM = "NordArrel <hola@nordarrel.pauvepe.com>";
+const FROM = "NordArrel <hola@nordarrel-web.pauvepe.com>";
 const ADMIN_EMAIL = process.env.NORDARREL_ADMIN_EMAIL || "info@pauvepe.com";
 
 export async function sendAppointmentConfirmation({
