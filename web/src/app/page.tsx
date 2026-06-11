@@ -80,22 +80,22 @@ const team = [
 
 const services = [
   {
-    image: "",
+    image: "/assets/generated/servicio-diagnostico-videollamada.png",
     title: "Diagnostico capilar",
     text: "Primera valoracion para entender caida, densidad, grasa, caspa, picor o antecedentes antes de recomendar nada.",
   },
   {
-    image: "",
+    image: "/assets/generated/servicio-tratamiento-regenerativo.png",
     title: "Tratamiento regenerativo",
     text: "Protocolos de bioestimulacion, PRP o mesoterapia cuando el caso encaja y hay expectativas realistas.",
   },
   {
-    image: "",
+    image: "/assets/generated/servicio-salud-cuero-cabelludo.png",
     title: "Salud del cuero cabelludo",
     text: "Revision de senales visibles, habitos y molestias para ordenar el origen del problema capilar.",
   },
   {
-    image: "",
+    image: "/assets/generated/servicio-seguimiento-presencial.png",
     title: "Seguimiento presencial",
     text: "Controles periodicos para medir evolucion, ajustar el plan y mantener el caso ordenado en el tiempo.",
   },
